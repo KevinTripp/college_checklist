@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @check.name %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @check.due_date %>
+</p>
+
+<p>
+  <b>Date complete:</b>
+  <%= @check.date_complete %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @check.completed %>
+</p>
+
+<p>
+  <b>College list:</b>
+  <%= @check.college_list %>
+</p>
+
+
+<%= link_to 'Edit', edit_check_path(@check) %> |
+<%= link_to 'Back', checks_path %>

@@ -1,0 +1,29 @@
+<h1>Listing steplists</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Due date</th>
+    <th>Date completed</th>
+    <th>College list</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @steplists.each do |steplist| %>
+  <tr>
+    <td><%= steplist.name %></td>
+    <td><%= steplist.due_date %></td>
+    <td><%= steplist.date_completed %></td>
+    <td><%= steplist.college_list %></td>
+    <td><%= link_to 'Show', steplist %></td>
+    <td><%= link_to 'Edit', edit_steplist_path(steplist) %></td>
+    <td><%= link_to 'Destroy', steplist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Steplist', new_steplist_path %>

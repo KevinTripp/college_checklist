@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>College list:</b>
+  <%= @checklist.college_list %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @checklist.name %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @checklist.due_date %>
+</p>
+
+<p>
+  <b>Date complete:</b>
+  <%= @checklist.date_complete %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @checklist.completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_checklist_path(@checklist) %> |
+<%= link_to 'Back', checklists_path %>

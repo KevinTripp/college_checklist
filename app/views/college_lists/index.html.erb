@@ -1,0 +1,39 @@
+<h1>Listing college_lists</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Date due</th>
+    <th>Date complete</th>
+    <th>Accepted</th>
+    <th>Date accepted</th>
+    <th>User</th>
+    <th>Completed steps</th>
+    <th>Incomplete steps</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @college_lists.each do |college_list| %>
+  <tr>
+    <td><%= college_list.name %></td>
+    <td><%= college_list.priority %></td>
+    <td><%= college_list.date_due %></td>
+    <td><%= college_list.date_complete %></td>
+    <td><%= college_list.accepted %></td>
+    <td><%= college_list.date_accepted %></td>
+    <td><%= college_list.user_id %></td>
+    <td><%= college_list.completed_steps %></td>
+    <td><%= college_list.incomplete_steps %></td>
+    <td><%= link_to 'Show', college_list %></td>
+    <td><%= link_to 'Edit', edit_college_list_path(college_list) %></td>
+    <td><%= link_to 'Destroy', college_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New College list', new_college_list_path %>

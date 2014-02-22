@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  priority: 1
+  date_due: 2012-10-28 19:46:31
+  date_complete: 2012-10-28 19:46:31
+  accepted: false
+  date_accepted: 2012-10-28 19:46:31
+  user_id: 1
+  completed_steps: 1
+  incomplete_steps: 1
+
+two:
+  name: MyString
+  priority: 1
+  date_due: 2012-10-28 19:46:31
+  date_complete: 2012-10-28 19:46:31
+  accepted: false
+  date_accepted: 2012-10-28 19:46:31
+  user_id: 1
+  completed_steps: 1
+  incomplete_steps: 1

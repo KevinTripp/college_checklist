@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  due_date: 2012-10-28 19:37:40
+  date_completed: 2012-10-28 19:37:40
+  college_list: 
+
+two:
+  name: MyString
+  due_date: 2012-10-28 19:37:40
+  date_completed: 2012-10-28 19:37:40
+  college_list: 

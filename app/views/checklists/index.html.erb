@@ -1,0 +1,31 @@
+<h1>Listing checklists</h1>
+
+<table>
+  <tr>
+    <th>College list</th>
+    <th>Name</th>
+    <th>Due date</th>
+    <th>Date complete</th>
+    <th>Completed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @checklists.each do |checklist| %>
+  <tr>
+    <td><%= checklist.college_list %></td>
+    <td><%= checklist.name %></td>
+    <td><%= checklist.due_date %></td>
+    <td><%= checklist.date_complete %></td>
+    <td><%= checklist.completed %></td>
+    <td><%= link_to 'Show', checklist %></td>
+    <td><%= link_to 'Edit', edit_checklist_path(checklist) %></td>
+    <td><%= link_to 'Destroy', checklist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Checklist', new_checklist_path %>

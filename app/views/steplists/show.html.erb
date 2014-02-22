@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @steplist.name %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @steplist.due_date %>
+</p>
+
+<p>
+  <b>Date completed:</b>
+  <%= @steplist.date_completed %>
+</p>
+
+<p>
+  <b>College list:</b>
+  <%= @steplist.college_list %>
+</p>
+
+
+<%= link_to 'Edit', edit_steplist_path(@steplist) %> |
+<%= link_to 'Back', steplists_path %>

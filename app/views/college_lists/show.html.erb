@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @college_list.name %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @college_list.priority %>
+</p>
+
+<p>
+  <b>Date due:</b>
+  <%= @college_list.date_due %>
+</p>
+
+<p>
+  <b>Date complete:</b>
+  <%= @college_list.date_complete %>
+</p>
+
+<p>
+  <b>Accepted:</b>
+  <%= @college_list.accepted %>
+</p>
+
+<p>
+  <b>Date accepted:</b>
+  <%= @college_list.date_accepted %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @college_list.user_id %>
+</p>
+
+<p>
+  <b>Completed steps:</b>
+  <%= @college_list.completed_steps %>
+</p>
+
+<p>
+  <b>Incomplete steps:</b>
+  <%= @college_list.incomplete_steps %>
+</p>
+
+
+<%= link_to 'Edit', edit_college_list_path(@college_list) %> |
+<%= link_to 'Back', college_lists_path %>

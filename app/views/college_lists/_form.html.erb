@@ -1,0 +1,53 @@
+<%= form_for(@college_list) do |f| %>
+  <% if @college_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@college_list.errors.count, "error") %> prohibited this college_list from being saved:</h2>
+
+      <ul>
+      <% @college_list.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br />
+    <%= f.number_field :priority %>
+  </div>
+  <div class="field">
+    <%= f.label :date_due %><br />
+    <%= f.datetime_select :date_due %>
+  </div>
+  <div class="field">
+    <%= f.label :date_complete %><br />
+    <%= f.datetime_select :date_complete %>
+  </div>
+  <div class="field">
+    <%= f.label :accepted %><br />
+    <%= f.check_box :accepted %>
+  </div>
+  <div class="field">
+    <%= f.label :date_accepted %><br />
+    <%= f.datetime_select :date_accepted %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :completed_steps %><br />
+    <%= f.number_field :completed_steps %>
+  </div>
+  <div class="field">
+    <%= f.label :incomplete_steps %><br />
+    <%= f.number_field :incomplete_steps %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
